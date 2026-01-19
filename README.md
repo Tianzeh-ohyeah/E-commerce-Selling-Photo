@@ -4,7 +4,7 @@
 
 
 ## 📖 简介 / Introduction
-**Automated eCommerce Scene Composer** 是一款高效的自动化视觉合成脚本。它能够将海量的白底产品图（ASINs）批量合成为具有专业光影感的海报。
+**Automated eCommerce Scene Composer** 是一款高效的自动化视觉合成脚本。它能够将海量的白底产品图SKUs批量合成为具有专业光影感的海报。
 
 - **中文用户**：适用于需要快速生成双11、大促海报的电商运营或技术人员。
 - **English Users**: A high-efficiency tool to batch-compose product photos into high-quality podium backgrounds with dynamic recoloring and shadow rendering.
@@ -28,7 +28,7 @@
 ├── events/                 # 活动目录 / Events Root
 │   ├── double11/           # 活动 A / Event A
 │   │   ├── config.txt      # 参数配置 / Configuration
-│   │   └── asins/          # 产品图片 / Product Images
+│   │   └── skus/          # 产品图片 / Product Images
 │   │       ├── Shoes/      # 类目 / Categories
 │   │       └── Bags/
 │   └── valentines/         # 活动 B / Event B
@@ -51,12 +51,12 @@ sub_title_pos: 0.5, 0.18
 text_color: #FFFFFF
 
 # --- 产品缩放 / Scale ---
-asin_scale: 0.35
+skus_scale: 0.35
 ```
 ## 🚀 快速开始 / Quick Start
 ```
 安装依赖 / Install Dependencies: Bash - pip install opencv-python pillow numpy
-准备资源 / Setup: 将产品图按目录结构放入 asins 文件夹，修改 config.txt。
+准备资源 / Setup: 将产品图按目录结构放入 skus 文件夹，修改 config.txt。
 运行 / Run: Bash - python main.py
 ```
 
