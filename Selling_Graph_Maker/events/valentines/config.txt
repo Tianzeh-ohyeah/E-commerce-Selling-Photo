@@ -1,0 +1,18 @@
+# --- 颜色映射 (RGB 是 background.jpg 的原始颜色) ---
+# 替换正黄色曲线为粉色
+color_map_1: 202,224,211 : #C7A8E0
+
+
+# --- 文字信息 (AI 会自动避开文字区域) ---
+main_title: New Spring Arrivals
+main_title_size: 0.08
+main_title_pos: 0.05, 0.05
+text_color: #FFFFFF
+
+sub_title: 2026 Collection 50% OFF
+sub_title_size: 0.04
+sub_title_pos: 0.05, 0.15
+
+# --- 产品排版 ---
+# 0.25 意味着产品高度约为 270 像素，一行可以放 4-5 个
+asin_scale: 0.25
