@@ -57,11 +57,11 @@ def advanced_recolor(image, color_mapping_list):
 
 def apply_product_to_center(canvas, product_img, center_ratio=(0.5, 0.75), scale_ratio=0.35):
     """
-    基于你提供的逻辑：精准放置、双层阴影、且根据 asin_scale 调整大小
+    基于你提供的逻辑：精准放置、双层阴影、且根据 skus_scale 调整大小
     """
     cw, ch = canvas.size
     
-    # --- 缩放逻辑改进：读取 asin_scale 让产品变大 ---
+    # --- 缩放逻辑改进：读取 skus_scale 让产品变大 ---
     target_h = int(ch * scale_ratio)
     pw, ph = product_img.size
     zoom_factor = target_h / ph
@@ -131,11 +131,11 @@ def process_event(event_name, events_root, bg_path):
     recolored_bg, _ = advanced_recolor(original_bg, color_map)
     W, H = recolored_bg.size
 
-    asin_root = os.path.join(event_dir, "asins")
-    categories = [d for d in os.listdir(asin_root) if os.path.isdir(os.path.join(asin_root, d))]
+    skus_root = os.path.join(event_dir, "skus")
+    categories = [d for d in os.listdir(skus_root) if os.path.isdir(os.path.join(skus_root, d))]
 
     for cat in categories:
-        cat_path = os.path.join(asin_root, cat)
+        cat_path = os.path.join(skus_root, cat)
         for img_name in os.listdir(cat_path):
             if not img_name.lower().endswith(('.png', '.jpg', '.jpeg')): continue
             
