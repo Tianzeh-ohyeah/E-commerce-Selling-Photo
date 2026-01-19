@@ -1,5 +1,7 @@
 # Automated eCommerce Scene Composer 🎨
 **一款专为电商设计的自动化产品视觉合成工具**
+<img width="2369" height="1331" alt="Screenshot 2026-01-19 172354" src="https://github.com/user-attachments/assets/1e39c760-ee31-4a55-9afb-640de5079b83" />
+
 
 ## 📖 简介 / Introduction
 **Automated eCommerce Scene Composer** 是一款高效的自动化视觉合成脚本。它能够将海量的白底产品图（ASINs）批量合成为具有专业光影感的海报。
